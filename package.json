@@ -1,0 +1,21 @@
+{
+  "name": "share-type",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-super": "tsc -v && ts-node src/superstruct/index.ts",
+    "run-yup": "tsc -v && ts-node src/yup/index.ts",
+    "generate-json-schema": "ts-node generate.ts",
+    "tsc": "tsc -v && tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "superstruct": "^0.16.0",
+    "typescript": "4.7.3",
+    "typescript-json-schema": "^0.54.0",
+    "yup": "^1.0.0-beta.4"
+  }
+}
