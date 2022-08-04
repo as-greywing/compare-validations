@@ -16,7 +16,7 @@ const yupProgram = TJS.getProgramFromFiles(
 
 const yupSchema = TJS.generateSchema(yupProgram, "*", settings);
 fs.writeFileSync(
-  "./generated/types/yup.ts",
+  "./generated/json-schema/yup.ts",
   "const schema = " +
     JSON.stringify(yupSchema, null, 2) +
     " as const;\nexport default schema.definitions;"
@@ -31,7 +31,7 @@ const superProgram = TJS.getProgramFromFiles(
 
 const superSchema = TJS.generateSchema(superProgram, "*", settings);
 fs.writeFileSync(
-  "./generated/types/superstruct.ts",
+  "./generated/json-schema/superstruct.ts",
   "const schema = " +
     JSON.stringify(superSchema, null, 2) +
     " as const;\nexport default schema.definitions;"
